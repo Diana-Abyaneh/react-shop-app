@@ -1,7 +1,11 @@
+.container {
+  display: flex;
+}
+
 .list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 25px;
+  gap: 20px;
 }
