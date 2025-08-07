@@ -1,0 +1,23 @@
+.categories {
+    display: flex;
+    flex-direction: column;
+    border: 2px dotted #fe5d42;
+    border-radius: 10px;
+    padding: 20px;
+    height: 220px;
+    gap: 15px;
+}
+
+.head {
+    color: #fe5d42;
+    display: flex;
+    gap: 5px;
+    line-height: 15px;
+}
+
+li {
+    cursor: pointer;
+    font-weight: 500;
+    text-wrap: nowrap;
+    padding: 3px;
+}

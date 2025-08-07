@@ -1,5 +1,6 @@
 .container {
   display: flex;
+  gap: 20px;
 }
 
 .list {
@@ -9,3 +10,5 @@
   justify-content: space-between;
   gap: 20px;
 }
+
+

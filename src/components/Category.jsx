@@ -1,14 +1,17 @@
 import { GoListUnordered } from "react-icons/go";
 import styles from "./Category.module.css";
+
 function Category() {
+
   const categoryHandler = (event) => {
     const { tagName } = event.target;
     const category = event.target.innerText.toLowerCase();
     if (tagName !== "LI") return;
   };
+
   return (
     <div className={styles.categories}>
-      <div>
+      <div className={styles.head}>
         <GoListUnordered />
         <h3>Categories</h3>
       </div>
