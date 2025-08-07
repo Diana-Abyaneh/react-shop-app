@@ -2,7 +2,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  border: 2px dashed rgba(88, 88, 88, 0.525);
+  border: 2px dotted #fe5d42;
   width: 320px;
   height: 400px;
   border-radius: 10px;
@@ -24,3 +24,47 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+p {
+  color: rgb(70, 70, 70);
+}
+
+.actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.actions a {
+  font-size: 1.5rem;
+  height: 25px;
+  color: #fe5d42;
+  cursor: pointer;
+}
+
+.actions div {
+  display: flex;
+  align-items: center;
+}
+
+.actions div span {
+  width: 20px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.actions div button {
+  background-color: #fe5d42;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  padding: 2px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
