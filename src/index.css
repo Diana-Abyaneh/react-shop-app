@@ -4,7 +4,6 @@
   
 }
 
-
 body {
   margin: auto;
   max-width: 1200px;
@@ -22,4 +21,8 @@ body {
 a{
   text-decoration: inherit;
   color: inherit;
+}
+
+li {
+  list-style: none;
 }
