@@ -4,17 +4,24 @@ import styles from "./ProductPage.module.css";
 import Loader from "../components/Loader.jsx";
 import Search from "../components/Search.jsx";
 import Category from "../components/Category.jsx";
+import { useEffect, useState } from "react";
 
 function ProductsPage() {
   const products = useProducts();
+  const [displayed, setDisplayed] = useState([]);
+  
+  useEffect(() => {
+    setDisplayed(products);
+  }, [products]);
+
   return (
     <>
       <Search />
       <div className={styles.container}>
         <ul className={styles.list}>
-          {!products.length && <Loader />}
-          {products &&
-            products.map((product) => (
+          {!displayed.length && <Loader />}
+          {displayed &&
+            displayed.map((product) => (
               <Cards key={product.id} data={product} />
             ))}
         </ul>
