@@ -9,30 +9,37 @@ import styles from "./ProductPage.module.css";
 import { ProductContext } from "../context/ProductContext";
 import { useProducts } from "../utils/useProducts";
 import { useQuery } from "../utils/useQuery";
+import { getInitialQuery } from "../helper/helper.js";
 
 function ProductsPage() {
   const products = useProducts();
   const { displayed, setDisplayed } = useContext(ProductContext);
-  const [query] = useQuery();
+  const [query, setQuery] = useQuery();
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
+    const initialQuery = getInitialQuery(searchParams);
+    setQuery(initialQuery);
+  }, [searchParams, setQuery]);
+
+  useEffect(() => {
     let filtered = [...products];
-    setSearchParams(query);
-    if (query.category && query.category !== "all") {
+
+    if (query.category) {
       filtered = filtered.filter(
-        (product) => product.category.toLowerCase() === query.category
+        (p) => p.category.toLowerCase() === query.category.toLowerCase()
       );
     }
 
     if (query.search) {
-      filtered = filtered.filter((product) =>
-        product.title.toLowerCase().includes(query.search)
+      filtered = filtered.filter((p) =>
+        p.title.toLowerCase().includes(query.search.toLowerCase())
       );
     }
 
     setDisplayed(filtered);
-  }, [products, query, setDisplayed]);
+    setSearchParams(query);
+  }, [products, query, setDisplayed, setSearchParams]);
 
   return (
     <>

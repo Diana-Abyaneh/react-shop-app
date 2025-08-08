@@ -1,18 +1,23 @@
 import { IoSearch } from "react-icons/io5";
 import { useState } from "react";
 import { useQuery } from "../utils/useQuery";
+import { createQueryObject } from "../helper/helper.js";
 import styles from "./Search.module.css";
-
-import createQueryObject from "../helper/helper.js";
 
 function Search() {
   const [search, setSearch] = useState("");
   const [, setQuery] = useQuery();
 
-  const searchHandler = () => {
-    setQuery((query) =>
-      createQueryObject(query, { search: search.toLowerCase().trim() })
+  const runSearch = () => {
+    setQuery((prev) =>
+      createQueryObject(prev, { search: search.toLowerCase().trim() })
     );
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      runSearch();
+    }
   };
 
   return (
@@ -22,8 +27,9 @@ function Search() {
         placeholder="Search..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
+        onKeyDown={handleKeyDown}
       />
-      <button onClick={searchHandler}>
+      <button onClick={runSearch}>
         <IoSearch />
       </button>
     </div>

@@ -1,15 +1,34 @@
 const createQueryObject = (currentQuery, newQuery) => {
-  if (newQuery.category == "all") {
-    const { category, ...rest } = currentQuery;
-    return rest;
+  let updatedQuery = { ...currentQuery };
+
+  if (newQuery.category !== undefined) {
+    if (newQuery.category === "all") {
+      delete updatedQuery.category;
+    } else {
+      updatedQuery.category = newQuery.category;
+    }
   }
 
-  if (newQuery.search == "") {
-    const { search, ...rest } = currentQuery;
-    return rest;
+  if (newQuery.search !== undefined) {
+    if (newQuery.search.trim() === "") {
+      delete updatedQuery.search;
+    } else {
+      updatedQuery.search = newQuery.search;
+    }
   }
 
-  return { ...currentQuery, ...newQuery };
+  return updatedQuery;
 };
 
-export default createQueryObject;
+const getInitialQuery = (searchParams) => {
+  const query = {};
+  const category = searchParams.get("category");
+  const search = searchParams.get("search");
+
+  if (category) query.category = category;
+  if (search) query.search = search;
+
+  return query;
+};
+
+export { createQueryObject, getInitialQuery };
