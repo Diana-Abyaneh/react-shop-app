@@ -1,13 +1,15 @@
 import { IoSearch } from "react-icons/io5";
 import { useState } from "react";
+import { useQuery } from "../utils/useQuery";
 import styles from "./Search.module.css"
 
 function Search() {
 
   const [search, setSearch] = useState("");
+  const [query, setQuery] = useQuery();
 
   const searchHandler = () => {
-    console.log(search);
+    setQuery(query => ({...query, search}))  
   };
 
   return (
