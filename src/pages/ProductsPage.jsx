@@ -1,4 +1,5 @@
 import { useEffect, useContext } from "react";
+import { useSearchParams } from "react-router-dom";
 import Cards from "../components/ProductCard.jsx";
 import Loader from "../components/Loader.jsx";
 import Search from "../components/Search.jsx";
@@ -13,10 +14,11 @@ function ProductsPage() {
   const products = useProducts();
   const { displayed, setDisplayed } = useContext(ProductContext);
   const [query] = useQuery();
+  const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
     let filtered = [...products];
-
+    setSearchParams(query);
     if (query.category && query.category !== "all") {
       filtered = filtered.filter(
         (product) => product.category.toLowerCase() === query.category
