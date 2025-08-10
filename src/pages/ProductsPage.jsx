@@ -39,10 +39,22 @@ function ProductsPage() {
 
     setDisplayed(filtered);
 
-    if (Object.keys(query).length > 0) {
-      setSearchParams(query);
+    const cleanQuery = { ...query };
+    if (cleanQuery.category === "all") {
+      delete cleanQuery.category;
     }
-  }, [products, query, setDisplayed, setSearchParams]);
+    if (!cleanQuery.search) {
+      delete cleanQuery.search;
+    }
+
+    const currentParams = Object.fromEntries(searchParams.entries());
+    const nextParams = Object.entries(cleanQuery);
+
+    if (JSON.stringify(currentParams) !== JSON.stringify(Object.fromEntries(nextParams))) {
+      setSearchParams(cleanQuery);
+    }
+
+  }, [products, query, setDisplayed, searchParams, setSearchParams]);
 
   return (
     <>
