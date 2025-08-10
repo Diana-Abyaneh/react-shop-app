@@ -1,7 +1,7 @@
 .categories {
     display: flex;
     flex-direction: column;
-    border: 2px dotted #fe5d42;
+    border: 2px dashed #fe5d42;
     border-radius: 10px;
     padding: 20px;
     height: 220px;
@@ -15,9 +15,20 @@
     line-height: 15px;
 }
 
-li {
+.listItem {
     cursor: pointer;
     font-weight: 500;
     text-wrap: nowrap;
     padding: 3px;
+    transition: color 0.2s ease, font-weight 0.2s ease;
+}
+
+.active {
+    font-weight: bold;
+    color: #fe5d42;
+}
+
+.inactive {
+    font-weight: 500;
+    color: inherit;
 }

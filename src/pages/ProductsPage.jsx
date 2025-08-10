@@ -20,7 +20,7 @@ function ProductsPage() {
   useEffect(() => {
     const initialQuery = getInitialQuery(searchParams);
     setQuery(initialQuery);
-  }, [searchParams, setQuery]);
+  }, []); 
 
   useEffect(() => {
     let filtered = [...products];
@@ -38,7 +38,10 @@ function ProductsPage() {
     }
 
     setDisplayed(filtered);
-    setSearchParams(query);
+
+    if (Object.keys(query).length > 0) {
+      setSearchParams(query);
+    }
   }, [products, query, setDisplayed, setSearchParams]);
 
   return (
