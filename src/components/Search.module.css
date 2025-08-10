@@ -4,6 +4,7 @@
 }
 
 input {
+  font-family: "Sansation", sans-serif;
   border: 2px dashed #6e6e6eb3;
   border-radius: 10px;
   padding: 10px;

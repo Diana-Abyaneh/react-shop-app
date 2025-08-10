@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 :root {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Sansation", sans-serif;
   line-height: 1.5;
-  
 }
 
 body {
@@ -10,15 +11,17 @@ body {
   min-height: 100vh;
   padding: 10px;
   background-color: #f9f9f9;
+  overflow-y: auto;
+  box-sizing: content-box;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: inherit;
   color: inherit;
 }
