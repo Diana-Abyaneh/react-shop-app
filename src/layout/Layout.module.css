@@ -1,0 +1,23 @@
+.header, .footer {
+    background-color: #fe5d42;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    line-height: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.footer{
+    text-align: center;
+}
+
+span{
+    font-size: 15px;
+}
