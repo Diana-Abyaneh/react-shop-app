@@ -3,7 +3,7 @@ import ProductsPage from "./pages/ProductsPage";
 import DetailsPage from "./pages/DetailsPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import PageNotFound from "./pages/404";
-import ProductProvider from "./Context/ProductContext";
+import ProductProvider from "./context/ProductContext";
 import CartProvider from "./Context/CartContext";
 import Layout from "./layout/Layout";
 
