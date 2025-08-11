@@ -9,8 +9,8 @@ import Layout from "./layout/Layout";
 
 function App() {
   return (
-    <Layout>
-      <CartProvider>
+    <CartProvider>
+      <Layout>
         <ProductProvider>
           <Routes>
             <Route index element={<Navigate to="/products" replace />} />
@@ -20,8 +20,8 @@ function App() {
             <Route path="/*" element={<PageNotFound />} />
           </Routes>
         </ProductProvider>
-      </CartProvider>
-    </Layout>
+      </Layout>
+    </CartProvider>
   );
 }
 
