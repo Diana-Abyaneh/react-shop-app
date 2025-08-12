@@ -1,44 +1,75 @@
 .container {
-    margin: 10px;
-    display: flex;
-    gap: 20px;
-    min-height: 500px;
+  margin: 10px;
+  display: flex;
+  gap: 20px;
+  min-height: 500px;
 }
 
 .details {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border: 2px dashed #6e6e6eb3;
-    border-radius: 10px;
-    padding: 20px;
-    height: fit-content;
-    width: 215px;
-    position: sticky;
-    top: 85px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px dashed #6e6e6eb3;
+  border-radius: 10px;
+  padding: 20px;
+  height: fit-content;
+  width: 215px;
+  position: sticky;
+  top: 85px;
 }
 
 .details div {
-    display: flex;
-    gap:10px;
-    line-height: 17px;
+  display: flex;
+  gap: 10px;
+  line-height: 17px;
 }
 
 .details div span {
-    color: #fe5d42;
-} 
+  color: #fe5d42;
+}
 
 .details button {
-    width: 100%;
-    font-size: 15px;
-    height: 30px;
-    margin-top: 10px;
-    font-family: "Sansation";
+  width: 100%;
+  font-size: 15px;
+  height: 30px;
+  margin-top: 10px;
+  font-family: "Sansation";
 }
 
 .products {
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
-    width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  width: 90%;
+}
+
+.myToast {
+  font-family: "Sansation";
+  background-color: rgba(255, 255, 255, 0.91) !important;
+  border-radius: 10px !important;
+  margin-top: 5px !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px !important;
+  color: #fe5d42;
+  width: 350px !important;
+  max-width: 90vw !important;
+}
+
+.myToastBody {
+  font-size: 1rem;
+  color: #fe5d42 !important;
+  flex: 1;
+}
+
+.myToast svg {
+  fill: #fe5d42 !important;
+  width: 20px;
+  height: 20px;
+}
+
+.myProgress {
+  background-color: #fe5d42 !important;
 }

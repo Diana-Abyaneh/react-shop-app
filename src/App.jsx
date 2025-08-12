@@ -6,11 +6,14 @@ import PageNotFound from "./pages/404";
 import ProductProvider from "./context/ProductContext";
 import CartProvider from "./Context/CartContext";
 import Layout from "./layout/Layout";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <CartProvider>
       <Layout>
+        <ToastContainer />
         <ProductProvider>
           <Routes>
             <Route index element={<Navigate to="/products" replace />} />

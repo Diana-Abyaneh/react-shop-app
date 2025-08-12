@@ -1,6 +1,7 @@
 import { FaMoneyCheckAlt } from "react-icons/fa";
 import { MdNumbers } from "react-icons/md";
 import { LuBadgeCheck } from "react-icons/lu";
+import { toast } from "react-toastify";
 
 import BasketCard from "../components/BasketCard.jsx";
 import useCart from "../utils/useCart.js";
@@ -13,6 +14,15 @@ function CheckoutPage() {
 
   const clickHandler = (type, payload) => {
     dispatch({ type, payload });
+    if (type === "CHECKOUT") {
+      toast.success("Checkout completed successfully!", {
+        position: "top-center",
+        autoClose: 3000,
+        className: styles.myToast,
+        bodyClassName: styles.myToastBody,
+        progressClassName: styles.myProgress,
+      });
+    }
   };
 
   if (itemsCounter === 0) {
@@ -40,7 +50,9 @@ function CheckoutPage() {
           </span>
           <p>Status: {checkout ? "Done!" : "Pending..."}</p>
         </div>
-        <button>Checkout</button>
+        <button onClick={() => clickHandler("CHECKOUT", state)}>
+          Checkout
+        </button>
       </div>
 
       <div className={styles.products}>
