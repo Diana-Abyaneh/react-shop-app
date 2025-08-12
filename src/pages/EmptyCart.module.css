@@ -1,0 +1,28 @@
+.container {
+  height: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.container img {
+    width: 250px;
+    height: 250px;
+}
+
+
+.container button {
+  background-color: #fe5d47;
+  color: white;
+  width: 150px;
+  font-size: 15px;
+  font-family: "Sansation";
+}
+
+.container button:hover {
+    background-color: #d14b3a;
+    transition: 0.3s background-color ease;
+}
