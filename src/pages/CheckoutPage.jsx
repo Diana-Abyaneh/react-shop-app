@@ -15,18 +15,24 @@ function CheckoutPage() {
   return (
     <div className={styles.container}>
       <div className={styles.details}>
-        <span>
-          <FaMoneyCheckAlt />
+        <div>
+          <span>
+            <FaMoneyCheckAlt />
+          </span>
           <p>Total: {state.total}</p>
-        </span>
-        <span>
-          <MdNumbers />
+        </div>
+        <div>
+          <span>
+            <MdNumbers />
+          </span>
           <p>Quantity: {state.itemsCounter}</p>
-        </span>
-        <span>
-          <LuBadgeCheck />
+        </div>
+        <div>
+          <span>
+            <LuBadgeCheck />
+          </span>
           <p>Status: {state.checkout ? "Done!" : "Pending..."}</p>
-        </span>
+        </div>
         <button>Checkout</button>
       </div>
       <div className={styles.products}>

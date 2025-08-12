@@ -1,48 +1,52 @@
-.header, .footer {
-    background-color: #fe5d42;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 10px;
-    color: white;
+.header,
+.footer {
+  background-color: #fe5d42;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  color: white;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 25px;
+  position: sticky;
+  top: 10px;
+  z-index: 1000;
 }
 
 .header div {
-    position: relative;
-    height: 35px;
-    width: 35px;
-    background-color: white;
-    font-size: 1.6rem;
-    color: #fe5d42;
-    border-radius: 10px;
-    padding: 2px;
-    text-align: center;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  font-size: 1.6rem;
+  color: #fe5d42;
+  border-radius: 10px;
+  padding: 2px;
+  text-align: center;
 }
 
 .header span {
-    font-size: 0.9rem;
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    background-color: black;
-    color: white;
-    border-radius: 50%;
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    text-align: center;
+  font-size: 0.9rem;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  text-align: center;
 }
 
-.footer{
-    text-align: center;
+.footer {
+  text-align: center;
 }
 
-span{
-    font-size: 15px;
+span {
+  font-size: 15px;
 }
