@@ -8,6 +8,7 @@
   width: 100%;
   align-items: center;
   gap: 20px;
+  background-color: white;
 }
 
 .container img {
@@ -31,4 +32,20 @@
   font-size: 1rem;
   width: 30px;
   height: 30px;
+  background-color: #fe5d42;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+@media (max-width: 764px) {
+  .container {
+    width: 100%;
+    height: fit-content;
+  }
+  .container h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }

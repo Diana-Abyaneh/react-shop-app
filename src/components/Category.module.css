@@ -40,3 +40,21 @@
     font-weight: 400;
     color: inherit;
 }
+
+@media (max-width: 764px){
+    .categories {
+        width: 100%;
+        height: fit-content;
+        padding: 10px;
+        max-width: 365px;
+        margin-bottom: 20px;
+    }
+    .categories ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .listItem {
+        font-size: 0.7rem;
+    }
+}

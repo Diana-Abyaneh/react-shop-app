@@ -2,7 +2,7 @@
   margin: 20px 10px;
   display: flex;
   gap: 50px;
-  height: 490px;
+  min-height: 490px;
 }
 
 .container img {
@@ -37,12 +37,14 @@
   gap: 10px;
 }
 
-.icons span {
+.icons div {
   line-height: 17px;
   display: flex;
   gap: 15px;
 }
-
+.icons span {
+  color: #fe5d42;
+}
 .shopLink {
   align-self: flex-end;
   color: white;
@@ -52,8 +54,29 @@
   margin-top: 0;
 }
 
-
 .shopLink a {
   color: white;
   text-decoration: none;
+}
+
+@media (max-width: 764px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .container img {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    max-width: 350px;
+    padding: 30px;
+  }
+  .details {
+    width: 100%;
+    gap: 20px;
+    height: fit-content;
+  }
+  .shopLink {
+    align-self: center;
+  }
 }

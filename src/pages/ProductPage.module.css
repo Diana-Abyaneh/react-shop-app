@@ -14,5 +14,16 @@
   width: 1000px;
 }
 
-
+@media (max-width: 764px){
+  .container{
+    gap: 5px;
+    flex-direction: column-reverse;
+  }
+  .list {
+    gap: 20px;
+    margin: auto;
+    width: 100%;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
 

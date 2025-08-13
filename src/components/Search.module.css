@@ -3,7 +3,7 @@
   display: flex;
 }
 
-input {
+.searchContainer input {
   font-family: "Sansation", sans-serif;
   border: 2px dashed #6e6e6eb3;
   border-radius: 10px;
@@ -14,11 +14,11 @@ input {
   transition: border-color 0.3s ease;
 }
 
-input:focus {
+.searchContainer input:focus {
   border-color: #fe5d42;
 }
 
-button {
+.searchContainer button {
   background-color: #fe5d42;
   color: white;
   border: none;
@@ -29,7 +29,24 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.searchContainer button:hover {
   background-color: #c74a34;
   transition: background-color 0.3s ease;
+}
+
+@media (max-width: 764px){
+  .searchContainer {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .searchContainer input {
+    margin-right: 15px;
+  }
+
+  .searchContainer button {
+    width: 50px;
+    height: 50px;
+  }
+
 }

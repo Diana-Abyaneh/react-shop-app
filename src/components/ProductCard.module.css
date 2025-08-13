@@ -83,3 +83,12 @@ p {
   transition: background-color 0.3s ease;
   background-color: #c74a34;
 }
+
+@media (max-width:764px) {
+  .card {
+    width: 100%;
+  }
+  .card img {
+    width: 80%;
+  }
+}

@@ -6,6 +6,7 @@
 }
 
 .details {
+  background-color: white;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -29,11 +30,16 @@
 }
 
 .details button {
+  font-family: "Sansation";
+  background-color: #fe5d42;
+  border: none;
+  border-radius: 10px;
+  color: white;
   width: 100%;
   font-size: 15px;
   height: 30px;
   margin-top: 10px;
-  font-family: "Sansation";
+  cursor: pointer;
 }
 
 .products {
@@ -72,4 +78,21 @@
 
 .myProgress {
   background-color: #fe5d42 !important;
+}
+
+@media (max-width: 764px) {
+  .container {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .products {
+    width: 100%;
+    gap: 5px;
+  }
+  .details {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    position: static;
+  }
 }
