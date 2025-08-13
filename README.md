@@ -1,12 +1,83 @@
-# React + Vite
+# 🛍️ Shop App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern e-commerce web application built with **React + Vite**, powered by [Fake Store API](https://fakestoreapi.com/).  
+Browse products, view details, add items to the cart, and checkout — with a responsive UI.  
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+**[View on Vercel](https://your-vercel-live-link.vercel.app/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
+- 📦 **Product Listing** – Fetch and display products from Fake Store API  
+- 🔍 **Product Details Page** – View detailed information about each item  
+- 🛒 **Cart & Checkout Page** – Add/remove products and complete checkout  
+- ❌ **Custom 404 Page** – Friendly error page for undefined routes  
+- 📱 **Responsive Design** – Optimized for desktop and mobile devices  
+- 🔔 **Toast Notifications** – Feedback for cart actions and checkout events  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+- **React 18** with **Vite**
+- **React Router DOM** – Routing & navigation
+- **Context API** – State management for cart & products
+- **React Icons** – Iconography
+- **React Toastify** – Notifications
+- **CSS Modules** – Scoped styling
+- Deployment – **Vercel**
+
+---
+
+## 📦 Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/your-username/shop-app.git
+cd shop-app
+npm install
+```
+
+Run locally
+```bash
+npm run dev
+```
+
+---
+
+
+## 📁 Project Structure
+
+shop-app/
+├── public/
+│   └── images/
+│       ├── 404.png
+│       └── emptyCart.png
+├── src/
+│   ├── components/        # Reusable UI components
+│   ├── context/           # Context API providers
+│   ├── layout/            # Layout wrapper
+│   ├── pages/             # Pages (Products, Details, Checkout, 404)
+│   ├── services/          # API configuration
+│   ├── utils/             # Custom hooks & helpers
+│   ├── App.jsx            # Main app routes
+│   └── main.jsx           # App entry point
+└── vite.config.js         # Vite configuration
+
+
+---
+
+## 🌐 API
+Data is fetched from Fake Store API:
+
+- Products: GET https://fakestoreapi.com/products
+
+- Product Details: GET https://fakestoreapi.com/products/:id
+
+---
+
+## 👩‍💻 Author
+
+**Diana Abyaneh**  
+- GitHub: [@your-github-username](https://github.com/your-github-username)  
