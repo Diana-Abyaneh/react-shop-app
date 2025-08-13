@@ -4,7 +4,7 @@ import DetailsPage from "./pages/DetailsPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import PageNotFound from "./pages/404";
 import ProductProvider from "./context/ProductContext";
-import CartProvider from "./Context/CartContext";
+import CartProvider from "./context/CartContext";
 import Layout from "./layout/Layout";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

@@ -6,7 +6,7 @@ import Search from "../components/Search.jsx";
 import Category from "../components/Category.jsx";
 import styles from "./ProductPage.module.css";
 
-import { ProductContext } from "../context/ProductContext";
+import { ProductContext } from "../context/ProductContext.jsx";
 import { useProducts } from "../utils/useProducts";
 import { useQuery } from "../utils/useQuery";
 import { getInitialQuery } from "../helper/helper.js";
