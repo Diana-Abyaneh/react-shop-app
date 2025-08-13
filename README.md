@@ -4,7 +4,7 @@ A modern e-commerce web application built with **React + Vite**, powered by [Fak
 Browse products, view details, add items to the cart, and checkout — with a responsive UI.  
 
 ## 🚀 Live Demo
-**[View on Vercel](https://your-vercel-live-link.vercel.app/)**
+**[View on Vercel](https://react-shop-app-six.vercel.app/)**
 
 ---
 
@@ -29,7 +29,7 @@ Browse products, view details, add items to the cart, and checkout — with a re
 
 ---
 
-## 📦 Installation
+## ⚙️ Installation
 
 Clone the repository and install dependencies:
 
@@ -43,6 +43,18 @@ Run locally
 ```bash
 npm run dev
 ```
+
+---
+
+## 📦 Dependencies
+
+This project uses the following main packages:
+
+- **React** – Frontend library for building UI components.
+- **Axios** – For making HTTP requests to APIs.
+- **React Router DOM** – For routing and navigation between pages.
+- **React Icons** – For including scalable vector icons.
+- **React Toastify** – For displaying toast notifications.
 
 ---
 
@@ -80,4 +92,4 @@ Data is fetched from Fake Store API:
 ## 👩‍💻 Author
 
 **Diana Abyaneh**  
-- GitHub: [@your-github-username](https://github.com/your-github-username)  
+- GitHub: [@Diana-Abyaneh](https://github.com/Diana-Abyaneh)
