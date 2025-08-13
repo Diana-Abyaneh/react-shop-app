@@ -19,7 +19,7 @@ Browse products, view details, add items to the cart, and checkout — with a re
 ---
 
 ## 🛠️ Tech Stack
-- **React 18** with **Vite**
+- **React 19** with **Vite**
 - **React Router DOM** – Routing & navigation
 - **Context API** – State management for cart & products
 - **React Icons** – Iconography
