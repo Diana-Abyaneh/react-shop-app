@@ -67,16 +67,15 @@ shop-app/
 │       ├── 404.png
 │       └── emptyCart.png
 ├── src/
-│   ├── components/        # Reusable UI components
-│   ├── context/           # Context API providers
-│   ├── layout/            # Layout wrapper
-│   ├── pages/             # Pages (Products, Details, Checkout, 404)
-│   ├── services/          # API configuration
-│   ├── utils/             # Custom hooks & helpers
-│   ├── App.jsx            # Main app routes
-│   └── main.jsx           # App entry point
-└── vite.config.js         # Vite configuration
-
+│   ├── components/   # Reusable UI components
+│   ├── context/      # Context API providers
+│   ├── layout/       # Layout wrapper
+│   ├── pages/        # Pages (Products, Details, Checkout, 404)
+│   ├── services/     # API configuration
+│   ├── utils/        # Custom hooks & helpers
+│   ├── App.jsx       # Main app routes
+│   └── main.jsx      # App entry point
+└── vite.config.js    # Vite configuration
 
 ---
 
