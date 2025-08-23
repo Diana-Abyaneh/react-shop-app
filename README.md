@@ -60,7 +60,7 @@ This project uses the following main packages:
 
 
 ## 📁 Project Structure
-
+```
 shop-app/
 ├── public/
 │   └── images/
@@ -76,7 +76,7 @@ shop-app/
 │   ├── App.jsx       # Main app routes
 │   └── main.jsx      # App entry point
 └── vite.config.js    # Vite configuration
-
+```
 ---
 
 ## 🌐 API
